@@ -1,0 +1,78 @@
+article
+{
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 10px;
+    background-color: #99CC00;
+    font-family: Trebuchet MS;
+}
+
+#header
+{
+    height: 30px;
+    width: auto;
+    padding: 5px 5px 5px 5px;
+    background-color:#33B5E5;
+   
+}
+
+body { 
+     margin-top: 0px;
+     margin-right: 0px;
+     margin-bottom: 0px;
+     margin-left: 0px;
+     height: auto;
+}
+
+#knoppen
+{
+    float: right;
+    height: 30px;
+    width: 30px;
+    padding-right: 20px;
+}
+
+h1
+{
+    font-family: Trebuchet MS;
+    color: gray;
+}
+
+#logo
+{
+    float: left;
+    height: 30px;
+    width: auto;
+}
+
+#rssOutput
+{
+    font-family: Trebuchet MS;
+    font-size: 100%;
+    color: gray;
+    float: left;
+    width: 78%;
+}
+
+
+#menu
+{
+    margin: 0px 0px 0px 0px;
+    padding: 10px 10px 10px 10px;
+    height: 93%;
+    width: 20%;
+    float: left;
+    font-family: Trebuchet MS;
+    font-size: 100%;
+    color: gray;
+}
+
+iframe
+{
+    width: 100%;
+    height: 90%;
+}
+
+html
+{
+    height: 100%;
+}
