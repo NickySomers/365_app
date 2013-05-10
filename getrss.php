@@ -1,21 +1,21 @@
 <?php
 //get the q parameter from URL
-$xml=$_POST["rss"];
+$q=$_GET["q"];
 
 
 //find out which feed was selected
-//if($q=="Nieuwsblad")
- // {
-  //$xml=("http://feeds.nieuwsblad.be/nieuws/snelnieuws?fmt=xml");
- // }
-//elseif($q=="Het Laatste Nieuws")
- // {
- // $xml=("http://www.hln.be/rss.xml");
-//  }
-//elseif($q=="De Standaard")
-  //{
- // $xml=("http://www.standaard.be/rss/section/1f2838d4-99ea-49f0-9102-138784c7ea7c");
- // }
+if($q=="Nieuwsblad")
+ {
+  $xml=("http://feeds.nieuwsblad.be/nieuws/snelnieuws?fmt=xml");
+ }
+elseif($q=="Het Laatste Nieuws")
+ {
+  $xml=("http://www.hln.be/rss.xml");
+ }
+elseif($q=="De Standaard")
+{
+ $xml=("http://www.standaard.be/rss/section/1f2838d4-99ea-49f0-9102-138784c7ea7c");
+}
 
 
 $xmlDoc = new DOMDocument();

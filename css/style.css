@@ -57,13 +57,10 @@ h1
 #menu
 {
     margin: 0px 0px 0px 0px;
-    padding: 10px 10px 10px 10px;
     height: 93%;
     width: 20%;
     float: left;
     font-family: Trebuchet MS;
-    font-size: 100%;
-    color: gray;
 }
 
 iframe
@@ -75,4 +72,66 @@ iframe
 html
 {
     height: 100%;
+}
+
+#nieuws
+{
+    height: 40px;
+    font-size: 20px;
+    background-color: #99CC00;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: auto;
+    padding-left: 10px;
+    color: white;
+    width: 200px;
+}
+
+#tech
+{
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    background-color: #FFBB33;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: auto;
+    padding-left: 10px;
+    width: 200px;
+}
+
+#vrouwen
+{
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    background-color: #e840bc;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: auto;
+    padding-left: 10px;
+    width: 200px;
+}
+
+#mannen
+{
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    background-color: #33B5E5;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: auto;
+    padding-left: 10px;
+    width: 200px;
+    text-decoration: none;
+}
+
+a
+{
+    text-decoration: none;
 }
