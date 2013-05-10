@@ -37,8 +37,12 @@ xmlhttp.send();
     <p><a onclick="showRSS(this.title)" title="Nieuwsblad">Het Nieuwsblad</a></p>
     <p><a onclick="showRSS(this.title)" title="Het Laatste Nieuws">Het Laatste Nieuws</a></p>
     <p><a onclick="showRSS(this.title)" title="De Standaard">De Standaard</a></p>
-</div>
 
+</div>
+    <form action="getrss.php">
+        <input type="text" name="rss">
+        <input type="submit"  value="Toevoegen">
+    </form>
 <div id="rssOutput">
 </div>
 <br>

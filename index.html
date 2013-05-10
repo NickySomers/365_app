@@ -10,16 +10,9 @@
     <img id="knoppen" src="images/about.png">
         </div>
         <iframe src="masterpage.html" frameborder="0" ></iframe>
-    <script>
-if (sessionStorage.clickcount)
-  {
-  sessionStorage.clickcount=Number(sessionStorage.clickcount)+1;
-  }
-else
-  {
-  sessionStorage.clickcount=1;
-  }
-document.getElementById("result").innerHTML="You have clicked the button " + sessionStorage.clickcount + " time(s) in this session.";
-        </script>
+            <form action="getrss.php" method="post">
+        <input type="text" name="rss">
+        <input type="submit"  value="Toevoegen">
+    </form>
     </body>
 </html>
