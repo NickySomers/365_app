@@ -2,8 +2,9 @@ article
 {
     padding: 10px 10px 10px 10px;
     margin-bottom: 10px;
-    background-color: #99CC00;
+    background-color: transparant;
     font-family: Trebuchet MS;
+    font-size: 20px;
 }
 
 #header
@@ -47,10 +48,10 @@ h1
 #rssOutput
 {
     font-family: Trebuchet MS;
-    font-size: 100%;
     color: gray;
-    float: left;
-    width: 78%;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 30px;
 }
 
 
@@ -134,4 +135,5 @@ html
 a
 {
     text-decoration: none;
+    color: white;
 }
