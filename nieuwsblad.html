@@ -1,0 +1,46 @@
+<html>
+<head>
+     <link rel="stylesheet" href="css/style.css" type="text/css">
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+
+    google.load("feeds", "1");
+
+    function initialize() {
+      var feed = new google.feeds.Feed("http://feeds.nieuwsblad.be/nieuws/snelnieuws?fmt=xml");
+      feed.load(function(result) {
+        if (!result.error) {
+          var container = document.getElementById("rssOutput");
+          for (var i = 0; i < result.feed.entries.length; i++) {
+            var entry = result.feed.entries[i];
+            var div = document.createElement("div");
+            div.appendChild(document.createTextNode(entry.title));
+            container.appendChild(div);
+          }
+        }
+      });
+    }
+    google.setOnLoadCallback(initialize);
+
+    </script>
+</head>
+<body>
+<div id="container">
+<div id="header">
+    <a href="index.html"><img id="logo" src="images/logo2.png"></a>
+    <img id="knoppen" src="images/about.png">
+</div>
+<div id="menu">
+    <div id="nieuws"><a href="nieuwsblad.html" title="Nieuwsblad">Het Nieuwsblad</a></div>
+    <div id="nieuws"><a onclick="showRSS(this.title)" title="Het Laatste Nieuws">Het Laatste Nieuws</a></div>
+    <div id="nieuws"><a onclick="showRSS(this.title)" title="De Standaard">De Standaard</a></div>
+
+</div>
+<div id="rssOutput">
+    
+</div>
+
+</div>
+</body>
+</html>
+

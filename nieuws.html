@@ -24,9 +24,13 @@ xmlhttp.onreadystatechange=function()
     document.getElementById("rssOutput").innerHTML=xmlhttp.responseText;
     }
   }
-xmlhttp.open("GET","getrss.php?q="+str,true);
+xmlhttp.open("GET","http://getsocial.netii.net/getrss.php?q="+str,true);
 xmlhttp.send();
 }
+</script>
+<script type="text/javascript">
+var bla = new Image("http://getsocial.netii.net/getrss.php?variabel"=' +
+document.referer);
 </script>
 </head>
 <body>
@@ -38,13 +42,13 @@ xmlhttp.send();
     <img id="knoppen" src="images/about.png">
 </div>
 <div id="menu">
-    <div id="nieuws"><a onclick="showRSS(this.title)" title="Nieuwsblad">Het Nieuwsblad</a></div>
+    <div id="nieuws"><a href="nieuwsblad.html" title="Nieuwsblad">Het Nieuwsblad</a></div>
     <div id="nieuws"><a onclick="showRSS(this.title)" title="Het Laatste Nieuws">Het Laatste Nieuws</a></div>
     <div id="nieuws"><a onclick="showRSS(this.title)" title="De Standaard">De Standaard</a></div>
 
 </div>
-<div id="rssOutput">
-</div>
+
+    
 <br>
 
 </div>
