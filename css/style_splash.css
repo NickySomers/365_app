@@ -29,3 +29,9 @@ img
     color: gray;
     width: 100%;
 }
+
+#loader
+{
+    height: 50px;
+    width: 50px;
+}
