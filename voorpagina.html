@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="snap.css" />
+        <link rel="stylesheet" type="text/css" href="assets/demo.css" />
+    </head>
+    <body>
+        <div class="snap-drawers">
+            <div class="snap-drawer snap-drawer-left">
+                <div>
+                   
+                    <ul>
+                        <li><a href="#" >Voorpagina</a></li>
+                        <li><a href="binnenland.html">Binnenland</a></li>
+                        <li><a href="buitenland.html">Buitenland</a></li>
+                        <li><a href="buitenland.html">Sport</a></li>
+                        <li><a href="buitenland.html">Weer</a></li>
+ 
+                    </ul>
+
+                </div>
+            </div>
+            
+        </div>
+        
+        <div id="content" class="snap-content">
+            <div id="toolbar">
+                <a href="#" id="open-left"></a>
+                <h1>365</h1>
+            </div>
+            <p>Swipe naar rechts voor het menu.</p>
+        </div>
+        <script type="text/javascript" src="snap.js"></script>
+        <script type="text/javascript">
+            var snapper = new Snap({
+                element: document.getElementById('content'),
+                hyperextensible: false,
+                disable: 'right'
+            });
+            
+        </script>
+        <script type="text/javascript" src="assets/demo.js"></script>
+
+  
+    </body>
+</html>

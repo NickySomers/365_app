@@ -1,0 +1,31 @@
+body
+{
+    text-align: center;
+    background-color: #33B5E5
+}
+div
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 30%;
+    width: 50%;
+    margin: -15% 0 0 -25%;
+}
+
+img
+{
+    height: auto;
+    width:auto;
+
+}
+
+#rss
+{
+    margin-top: 100px;
+    padding-top: 40px;
+    font-size: 100%;
+    font-family: Trebuchet MS;
+    color: gray;
+    width: 100%;
+}

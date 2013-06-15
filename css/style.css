@@ -1,139 +1,16 @@
+
+#rss
+{
+    margin-top: 60px;
+    margin-left: 30px;
+    font-size: 150%;
+    font-family: Trebuchet MS;
+    color: gray;
+
+}
+
 article
 {
-    padding: 10px 10px 10px 10px;
-    margin-bottom: 10px;
-    background-color: transparant;
-    font-family: Trebuchet MS;
-    font-size: 20px;
-}
-
-#header
-{
-    height: 30px;
-    width: auto;
-    padding: 5px 5px 5px 5px;
-    background-color:#33B5E5;
-   
-}
-
-body { 
-     margin-top: 0px;
-     margin-right: 0px;
-     margin-bottom: 0px;
-     margin-left: 0px;
-     height: auto;
-}
-
-#knoppen
-{
-    float: right;
-    height: 30px;
-    width: 30px;
-    padding-right: 20px;
-}
-
-h1
-{
-    font-family: Trebuchet MS;
-    color: gray;
-}
-
-#logo
-{
-    float: left;
-    height: 30px;
-    width: auto;
-}
-
-#rssOutput
-{
-    font-family: Trebuchet MS;
-    color: gray;
-    font-size: 30px;
-    text-align: center;
-    padding-top: 30px;
-}
-
-
-#menu
-{
-    margin: 0px 0px 0px 0px;
-    height: 93%;
-    width: 20%;
-    float: left;
-    font-family: Trebuchet MS;
-}
-
-iframe
-{
-    width: 100%;
-    height: 90%;
-}
-
-html
-{
-    height: 100%;
-}
-
-#nieuws
-{
-    height: 40px;
-    font-size: 20px;
-    background-color: #99CC00;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-top: 10px;
-    padding-bottom: auto;
-    padding-left: 10px;
-    color: white;
-    width: 200px;
-}
-
-#tech
-{
-    height: 40px;
-    font-size: 20px;
-    color: white;
-    background-color: #FFBB33;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-top: 10px;
-    padding-bottom: auto;
-    padding-left: 10px;
-    width: 200px;
-}
-
-#vrouwen
-{
-    height: 40px;
-    font-size: 20px;
-    color: white;
-    background-color: #e840bc;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-top: 10px;
-    padding-bottom: auto;
-    padding-left: 10px;
-    width: 200px;
-}
-
-#mannen
-{
-    height: 40px;
-    font-size: 20px;
-    color: white;
-    background-color: #33B5E5;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-top: 10px;
-    padding-bottom: auto;
-    padding-left: 10px;
-    width: 200px;
-    text-decoration: none;
-}
-
-a
-{
-    text-decoration: none;
-    color: white;
+    height: 20%;
+    
 }

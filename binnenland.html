@@ -1,0 +1,75 @@
+<htmL>
+<head>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="stylesheet" type="text/css" href="snap.css" >
+        <link rel="stylesheet" type="text/css" href="assets/demo.css" >
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+</head>
+    
+<body>
+    
+        <div class="snap-drawers">
+            <div class="snap-drawer snap-drawer-left">
+                <div>
+                   
+                    <ul>
+                        <li><a href="#" >Voorpagina</a></li>
+                        <li><a href="binnenland.html">Binnenland</a></li>
+                        <li><a href="buitenland.html">Buitenland</a></li>
+                        <li><a href="buitenland.html">Sport</a></li>
+                        <li><a href="buitenland.html">Weer</a></li>
+ 
+                    </ul>
+
+                </div>
+            </div>
+            
+        </div>
+        
+        <div id="content" class="snap-content">
+            <div id="toolbar">
+                <a href="#" id="open-left"></a>
+                <h1>365</h1>
+            </div>
+            
+<script>
+    google.load("feeds", "1");
+
+    function initialize() {
+      var feed = new google.feeds.Feed("http://www.hln.be/rss.xml");
+      feed.load(function(result) {
+        if (!result.error) {
+          var container = document.getElementById("rssOutput");
+          for (var i = 0; i < result.feed.entries.length; i++) {
+            var entry = result.feed.entries[i];
+            var div = document.createElement("article");
+            div.appendChild(document.createTextNode(entry.title));
+            container.appendChild(div);
+          }
+        }
+      });
+    }
+    google.setOnLoadCallback(initialize);
+
+    </script>
+    <div id="rss">
+    <section id="rssOutput">
+    </section>
+</div>
+            
+             </div>
+        <script type="text/javascript" src="snap.js"></script>
+        <script type="text/javascript">
+            var snapper = new Snap({
+                element: document.getElementById('content'),
+                hyperextensible: false,
+                disable: 'right'
+            });
+            
+        </script>
+        <script type="text/javascript" src="assets/demo.js"></script>
+
+</body>
+</htmL>
+
