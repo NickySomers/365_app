@@ -18,7 +18,7 @@ google.load("feeds", "1") //Load Google Ajax Feed API (version 1)
                 <div>
                    
                     <ul>
-                        <li><a href="#" >Voorpagina</a></li>
+                        <li><a href="voorpagina.html" >Voorpagina</a></li>
                         <li><a href="binnenland.html">Binnenland</a></li>
                         <li><a href="buitenland.html">Buitenland</a></li>
                         <li><a href="buitenland.html">Sport</a></li>
@@ -46,13 +46,16 @@ google.load("feeds", "1") //Load Google Ajax Feed API (version 1)
   function OnLoad() {
     // Create a feed control
     var feedControl = new google.feeds.FeedControl();
-    feedControl.setNumEntries(15);
+    feedControl.setNumEntries(5);
     
     // Add feeds.
-    feedControl.addFeed("http://www.nieuws.be/rss/nieuws/binnenland.rss");  
+    feedControl.addFeed("http://www.deredactie.be/cm/vrtnieuws/binnenland?mode=atom");  
+    feedControl.addFeed("http://www.hln.be/rss.xml");
     feedControl.setLinkTarget("_blank");
 		// Draw it.
     feedControl.draw(document.getElementById("feeddiv"));
+    
+
   }
   
   google.setOnLoadCallback(OnLoad);
